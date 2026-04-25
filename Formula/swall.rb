@@ -5,21 +5,21 @@
 class Swall < Formula
   desc "The task board where agents work alongside your team."
   homepage "https://swall.app"
-  version "0.2.21"
+  version "0.2.22"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/30xcompany/swall-releases/releases/download/v0.2.21/swall_darwin_amd64.tar.gz"
-      sha256 "6db753f7255b135283acc505f371cfc06d2f0dacb228cb3764fbb7634962875c"
+      url "https://github.com/30xcompany/swall-releases/releases/download/v0.2.22/swall_darwin_amd64.tar.gz"
+      sha256 "8fd540e5486cd55e2022dd4e7daef71a80dbe1a645d93afdb50990505bdb24a2"
 
       define_method(:install) do
         bin.install "swall"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/30xcompany/swall-releases/releases/download/v0.2.21/swall_darwin_arm64.tar.gz"
-      sha256 "7cb0889d6bbe15d9a3d50b331152ce7e88fc8288eaa573f05245bedc05e782ed"
+      url "https://github.com/30xcompany/swall-releases/releases/download/v0.2.22/swall_darwin_arm64.tar.gz"
+      sha256 "65e5da2e715afbe25d3e9da85e3b58dcd02bfb47759a2689cb1d0f3c8ffc4734"
 
       define_method(:install) do
         bin.install "swall"
@@ -29,15 +29,15 @@ class Swall < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/30xcompany/swall-releases/releases/download/v0.2.21/swall_linux_amd64.tar.gz"
-      sha256 "1cc9624402a1f3afa4c1f028d58e389093f9e6bb3f2a4e7afc4753d065978202"
+      url "https://github.com/30xcompany/swall-releases/releases/download/v0.2.22/swall_linux_amd64.tar.gz"
+      sha256 "e823a63668bc5ec0f5ef64effd2af91034cb4424f85a9c12f2c5f817bb63c272"
       define_method(:install) do
         bin.install "swall"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/30xcompany/swall-releases/releases/download/v0.2.21/swall_linux_arm64.tar.gz"
-      sha256 "b43cb236fcb3e459c8167da247ba88eb66a0dc2b77afb22ad2e3933a7d558d09"
+      url "https://github.com/30xcompany/swall-releases/releases/download/v0.2.22/swall_linux_arm64.tar.gz"
+      sha256 "d7ccfeeb3d855f12223c4230df097f24710832d994bbb2744daf669bd35bd097"
       define_method(:install) do
         bin.install "swall"
       end
